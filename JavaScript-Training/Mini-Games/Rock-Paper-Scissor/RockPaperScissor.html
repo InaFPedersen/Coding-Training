@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissor</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background: blue;
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            height: 100vh;
+            width: 100%;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #gameboard{
+            height: 90vmin;
+            width: 90vmin;
+            background: linear-gradient(yellow, orange);
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #computer{
+         font-family: 'Courier New', Courier, monospace;
+         font-size: large; 
+         color: blue;
+        }
+
+        #you{
+         font-family: 'Courier New', Courier, monospace;
+         font-size: large; 
+         color: blueviolet;
+        }
+
+        #answer{
+         font-family: 'Courier New', Courier, monospace;
+         font-size: large; 
+         color: brown;
+        }
+
+        #score{
+         font-family: 'Courier New', Courier, monospace;
+         font-size: large; 
+         color: seagreen;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="gameboard">
+            <h2 id="computer">Computer Choice: <span id="computer-choice"></span></h2>
+            <h2 id="you">Your Choice: <span id="your-choice"></span></h2>
+            <h2 id="answer">Result: <span id="result"></span></h2>
+            <h2 id="score">Score: <span id="scorePoints"></span></h2>
+
+            <button id="rock"> Rock </button>
+            <button id="paper"> Paper </button>
+            <button id="scissor"> Scissor </button>
+
+        </div>
+    
+    </div>
+    <script src="RockPaperScissor.js"></script>
+</body>
+</html>
